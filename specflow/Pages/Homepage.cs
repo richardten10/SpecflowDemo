@@ -66,7 +66,6 @@ namespace specflow
 
             if (driver.FindElement(firstResult).Text.Contains(brownieDescription))
             {
-                Thread.Sleep(5000);
                 waitAndClick(driver.FindElement(addButton));
             }
             else
