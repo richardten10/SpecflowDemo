@@ -60,21 +60,9 @@ namespace specflow
 
         public void addBrowniesToBasketBySearch()
         {
-            // searchFor("browni");
-            // Thread.Sleep(1000);
-            // driver.FindElement(searchField).SendKeys("e");
-
             searchFor("brownie");
 
-            // Thread.Sleep(5000);
-
-            //  waitForBoolean(driver.FindElement(firstResult).Text.Contains(brownieDescription));
-
-            // pageDown(); 
-
-
             waitForDisplay(firstResult);
-
 
             if (driver.FindElement(firstResult).Text.Contains(brownieDescription))
             {
@@ -92,13 +80,7 @@ namespace specflow
         public void addChipsToBasketBySearch()
         {
             searchFor("humm");
-            // Thread.Sleep(2000);
-            //  driver.FindElement(searchField).SendKeys("m");
-
-            // Thread.Sleep(5000);
-
-            // pageDown(); 
-
+       
             waitForDisplay(firstResult);
 
             if (driver.FindElement(firstResult).Text.Contains(chipDescription))
@@ -115,12 +97,8 @@ namespace specflow
         public void addPopCornToBasketBySearch()
         {
             searchFor("pop");
-            //  Thread.Sleep(2000);
-            //  driver.FindElement(searchField).SendKeys("p");
-
+            
             waitForDisplay(firstResult);
-
-           // Thread.Sleep(5000);
 
             if (driver.FindElement(firstResult).Text.Contains(popcornDescription))
             {
